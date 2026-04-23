@@ -40,16 +40,4 @@
    ```
 
 ## 3. Render Deployment
-1. Go to Render.com and create a new **Web Service**.
-2. Connect your GitHub repository.
-3. Configure the Web Service:
-   - **Root Directory:** `backend` (Wait, since we serve frontend from backend, the root directory should be empty or `backend` if we build frontend first. A better approach is to change Build Command in Render.)
-   - **Build Command:** `cd ../frontend && npm install && npm run build && cd ../backend && npm install`
-   - **Start Command:** `node index.js`
-   - **Environment Variables:**
-     - `NODE_ENV`: `production`
-     - `MONGO_URI`: `<Your MongoDB Atlas URL>`
-     - `JWT_SECRET`: `<SuperSecretKey>`
-4. Click **Deploy Web Service**.
-
-Once deployed, copy the Render URL and update your Markdown report. Convert the Markdown to PDF using VSCode extensions or online converters.
+https://lost-and-found-yvce.onrender.com
