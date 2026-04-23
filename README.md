@@ -13,7 +13,7 @@
    npm install
    npm start
    ```
-   Server will run on http://localhost:5000.
+  
 3. **Frontend:**
    ```bash
    cd frontend
