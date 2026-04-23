@@ -18,6 +18,9 @@ mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/lost-and-fo
   .catch(err => console.error(err));
 
 // Routes
+app.get('/api', (req, res) => {
+    res.json({ message: "Backend API is running successfully!" });
+});
 app.use('/api', require('./routes/auth'));
 app.use('/api/items', require('./routes/items'));
 
